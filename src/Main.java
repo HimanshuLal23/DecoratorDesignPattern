@@ -7,7 +7,7 @@ import Decorator.JalapenoDecorator;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        BasePizza basePizza = new JalapenoDecorator(new MushroomDelightPizza());
+        BasePizza basePizza = new CapsicumDecorator(new JalapenoDecorator(new MushroomDelightPizza()));
         System.out.println(basePizza.cost());
     }
 }

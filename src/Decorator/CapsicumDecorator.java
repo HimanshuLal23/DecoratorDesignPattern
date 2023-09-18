@@ -3,9 +3,8 @@ package Decorator;
 import Base.BasePizza;
 
 public class CapsicumDecorator extends ToppingDecorator {
-    BasePizza basePizza;
     public CapsicumDecorator(BasePizza basePizza) {
-        this.basePizza = basePizza;
+        super(basePizza);
     }
     /**
      * @return the cost of decoration
